@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script defer src="login-page.js"></script>;          
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgba(43,20,20,0.699);
+}
+
+
+#login {
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:inherit ;
+}
+#signin{
+  display: none;
+}
+
+#login {
+ background-color:rgb(255, 255, 255);
+ text-align: center;
+  margin: 502px;
+  width: 29%;
+  padding: 21px;
+  opacity:0,5 ;
+  margin-top: 10%;
+  position: absolute;
+  left: 10%;
+  
+}
+
+
+input[type=text], input[type=password] {
+  width:80%;
+  padding: 6px;
+  margin: 1px 0 18px 0;
+  border: none;
+  background: rgb(206, 195, 195);
+  margin-right: 2px;
+  margin-left: 5px;
+}
+.Signup input[type=text], input[type=password] {
+  width:80%;
+  padding: 7px;
+  margin: 2px 0 25px 0;
+  border: none;
+  background: #ddd6d6;
+  margin-right: 3px;
+  margin-left: 16px;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  background-color: rgb(216, 211, 211);
+  outline: none;
+}
+
+
+.btn {
+  background-color: #4b0f04;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width:auto;
+  opacity: 0.9;
+  margin-bottom: 10px;
+
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.Signup{
+  border: rgb(207, 200, 200);
+   
+}
+#si{
+  background-color: #4b0f04;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+margin-top: 08px ;
+margin-bottom: 08px;}
+#sig{
+  background-color: #4b0f04;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.signupbtn{
+  background-color: #4b0f04;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+.signu{
+  margin: auto ;
+}
+#s{
+  background-color: #4b0f04;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 10px;
+margin-bottom: -1px;
+}
+#btn{
+  background-color: #4b0f04;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 10px ;
+margin-bottom: -1px;
+}
+
+
+
+</style>
+</head>
+<body>
+  
+
+<div id="login">
+  <div class="container">
+    <h1>Login</h1>
+<div>
+    <label for="email" class="container"><b>Email</b></label>
+    <input type="text" class="container" placeholder="Enter Email" name="email" required>
+   
+
+</div>
+<div>
+    <label for="psw" class="container"><b>Password</b></label>
+    <input type="password" class="container" placeholder="Enter Password" name="psw" required>
+    
+</div>
+   <div> <a href="index.html"submit" id="sig"  onclick="Test()">Login</button></a>
+    <button type="button" id="si">sign up</button>
+    <span class="psw">Forgot <a href="">password?</a></span>
+  </div>
+
+   </div>
+<div> 
+</div>
+</div>
+<div id="signin" >
+ <div id="sign" class="Signup" >
+    <div class="container">
+      <h1>Sign Up</h1>   
+     
+    
+
+    </div>
+      <label for="email" class="Signups se"><b>Email</b></label>
+      <input type="text" class="Signup se" placeholder="Enter Email" name="email" required>
+      <label for="psw" class="Signup su" ><b >Password</b></label>
+      <input type="password" class="Signup"placeholder="Enter Password" name="psw" required>
+      <label for="psw-repeat" class="Signup"><b>confirm Password</b></label>
+      <input type="password" class="Signup" placeholder="confirm Password" name="psw-repeat" required>
+      <label>
+        <input type="checkbox" class="container" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <div class="signup">
+        <button type="submit" id="s">Sign Up</button>
+          <button type="button" onclick="document.getElementById('').style.display='none'" id="btn">Cancel</button>
+       
+      </div>
+        
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    $("#si").click(function(){
+      $("#signin").fadeIn(2000)
+      $("#login").hide()
+    })
+    })
+    $("#s").click(function(){
+      var email=$(".Signup se").val()
+      var password=$(".signup su ").val()
+    })
+    
+ </script>
+</body>
+</html>
